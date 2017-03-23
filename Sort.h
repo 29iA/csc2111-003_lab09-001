@@ -35,13 +35,13 @@ T** Sort<T>::quickSort(T** items, int num_items, int (*compare) (T* one, T* two)
    //DO THIS
    //create a new array that will be sorted and returned
    //this is in case the original, unsorted array is also needed
-	T** sorted = new T*[numItems];
-   for (int i = 0; i < numItems; i++)
+	T** sorted = new T*[num_items];
+   for (int i = 0; i < num_items; i++)
    {
       sorted[i] = items[i];
    }
 
-   _quickSort(sorted, 0, numItems - 1, compare);
+   _quickSort(sorted, 0, num_items - 1, compare);
    return sorted;
 }
 
